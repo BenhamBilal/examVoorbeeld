@@ -77,3 +77,4 @@ const main = async () => {
   berekenTotaalPrijs(ineventaaris);
 };
 main();
+    
