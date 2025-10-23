@@ -51,8 +51,10 @@ const main = async () => {
     }
     return boekInventaaris;
   };
+  // console.log(await vulBoekInventaaris(lengteBoek));
 
   let ineventaaris = await vulBoekInventaaris(lengteBoek);
+  console.log(ineventaaris);
 
   const berekenTotaalPrijs = (ineventaaris) => {
     let kostPrijs = 0;
@@ -69,9 +71,9 @@ const main = async () => {
           break;
         default:
       }
-      return kostPrijs;
     }
+    console.log(`De total waarde is €${kostPrijs}`);
   };
   berekenTotaalPrijs(ineventaaris);
-}
+};
 main();
